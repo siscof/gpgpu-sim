@@ -40,6 +40,8 @@ else
 	export DEBUG=0
 endif
 
+print-% : ; @echo $* = $($*)
+
 BUILD_ROOT?=$(shell pwd)
 export TRACE?=1
 
